@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>minmax</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">COSO!!!!</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 20px;
+            border: 10px solid var(--yellow);
+            /*fit-content(100px)*/
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+    </style>
+</body>
+
+</html>
